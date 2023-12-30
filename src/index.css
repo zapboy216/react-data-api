@@ -1,75 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,300&display=swap');
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-body {
-	width: 100%;
-	background-color: #ddd;
-	font-family: 'Nunito', sans-serif;
-	overflow: scroll;
-}
-
 .app {
-	margin: auto;
-	width: 60%;
-}
-
-@media (max-width: 500px) {
-	.app {
-		margin: auto;
-		width: 90%;
-	}
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Creative, yet readable font */
+  background-color: #f0f0f2; /* Light grey background */
+  padding: 20px;
+  margin: auto;
+  width: 60%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Subtle box shadow for the whole app */
 }
 
 nav {
-	text-align: center;
-	padding: 30px 0;
+  background-color: #606060; /* Dark grey for contrast */
+  color: #ffffff;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 5px;
 }
 
-form {
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
+.add-post-container {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); /* Box shadow for form */
+  text-align: center; /* Center form elements */
 }
 
-.form-control,
+.form-control {
+  width: 90%;
+  margin: 10px auto; /* Center the form controls */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
 button {
-	padding: 10px;
-	border-radius: 5px;
+  background-color: #808080; /* Chromium grey for button */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block; /* Block level to allow for margin auto */
+  margin: 10px auto; /* Center the button */
 }
 
-form button {
-	background-color: grey;
-	color: #fff;
-	border: none;
-	cursor: pointer;
+button:hover {
+  background-color: #696969; /* Slightly darker grey on hover */
 }
 
 .posts-container {
-	margin-top: 50px;
-}
-
-.posts-container h2 {
-	margin: 15px 0;
+  margin-top: 20px;
+  text-align: center; /* Center posts container */
 }
 
 .post-card {
-	background-color: #fff;
-	padding: 20px;
-	border-radius: 5px;
-	margin-bottom: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); /* Box shadow for posts */
+}
+
+.post-title {
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.post-body {
+  color: #666666;
 }
 
 .delete-btn {
-	margin-top: 10px;
-	background-color: grey;
-	color: #fff;
-	padding: 8px 30px;
-	border-radius: 5px;
-	display: inline-block;
-	cursor: pointer;
+  background-color: #a9a9a9; /* Lighter grey for delete button */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.delete-btn:hover {
+  background-color: #808080; /* Chromium grey on hover */
 }
