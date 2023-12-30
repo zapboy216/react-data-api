@@ -15,7 +15,7 @@ body {
 
 .app {
 	margin: auto;
-	width: 40%;
+	width: 60%;
 }
 
 @media (max-width: 500px) {
@@ -38,12 +38,12 @@ form {
 
 .form-control,
 button {
-	padding: 20px;
+	padding: 10px;
 	border-radius: 5px;
 }
 
 form button {
-	background-color: black;
+	background-color: grey;
 	color: #fff;
 	border: none;
 	cursor: pointer;

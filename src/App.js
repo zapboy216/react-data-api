@@ -86,7 +86,7 @@ const App = () => {
 				</form>
 			</div>
 			<div className="posts-container">
-				<h2>All Posts 📫</h2>
+				<h2>Posts</h2>
 				{posts.map((post) => {
 					return (
 						<div className="post-card" key={post.id}>
